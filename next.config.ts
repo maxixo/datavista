@@ -1,9 +1,12 @@
 import type { NextConfig } from "next";
+import path from "path";
 
 const nextConfig: NextConfig = {
+   turbopack: {
+    root: path.resolve(__dirname), // e.g. C:\Users\HP\Documents\HNG\datavista
 
+   },
    reactStrictMode: true,
-  // swcMinify: true,
   
   // Enable static exports for better performance
   output: 'standalone',
