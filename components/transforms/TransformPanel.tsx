@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { Filter, SortAsc, Group, Plus, X } from 'lucide-react'
-import type { FilterConfig, SortConfig, GroupByConfig } from '@/types'
+import type { FilterConfig, SortConfig, GroupByConfig } from './../../types'
 
 interface TransformPanelProps {
   columns: string[]

@@ -1,22 +1,4 @@
-export interface FilterConfig {
-  column: string
-  operator: 'equals' | 'contains' | 'greater' | 'less' | 'between'
-  value: any
-  value2?: any // For 'between' operator
-}
-
-export interface SortConfig {
-  column: string
-  direction: 'asc' | 'desc'
-}
-
-export interface GroupByConfig {
-  column: string
-  aggregations: {
-    column: string
-    operation: 'sum' | 'avg' | 'count' | 'min' | 'max'
-  }[]
-}
+import type { FilterConfig, GroupByConfig, SortConfig } from '@/types'
 
 type GroupAccumulator = Record<string, { [key: string]: any; _items: any[] }>
 
